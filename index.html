@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Arabic poems</title>
 </head>
@@ -14,12 +15,12 @@
             <h1>AI Arabic poem generator</h1>
         </header>
         <main>
-            <form>
+            <form id="poem-generator-form">
                 <input type="text" placeholder="Enter the topic of your poem" autofocus required autocomplete="off"
                     class="instructions" />
                 <input type="submit" class="submit-button" />
             </form>
-            <div class="poem">The poem will go here.</div>
+            <div class="poem" id="poem"></div>
         </main>
         <footer>This AI project was coded by <a href="https://github.com/antjekunert4-png" target="_blank">Antje
                 Kunert</a>
